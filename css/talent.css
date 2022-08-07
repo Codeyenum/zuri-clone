@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #212529;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";        
+    text-align: left;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #fff;   
+    padding: 10.5px 1rem;
+    position: fixed;
+    width: 100%;
+    max-width: 100vw;  
+    z-index: 3;  
+}
+
+.header-logo {    
+    padding: 6px 8px;
+}
+
+button {
+    background-color: #e7332b;
+    border: none;
+    border-radius: 0 0 8px 0;
+    color: #fff;    
+    font-size: 1rem;            
+    padding: 8px 25px;    
+}
+
+a {
+    text-decoration: none;
+}
+
+header a>p {
+    display: none;
+}
+
+.banner-container {
+    margin: 0 1.675rem;
+    padding: 130px 0 0;    
+    text-align: center;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.banner h2 {
+    color: #161617;
+    font-size: 2.5rem;    
+    line-height: 3rem;
+}
+
+.banner p {
+    color: #787878;
+    font-size: 16px;    
+    margin: 2rem auto;
+    text-align: center;
+    width: 97%;
+}
+
+.red-highlight {
+    color: #e7332b;
+    position: relative;
+}
+
+.talents-swirl {
+    position: absolute;
+    right: -8px;
+    bottom: -16px;
+    width: 100px;
+}
+
+.btn-container {   
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.btn-container button {  
+    font-size: 1.1rem;          
+}
+
+.join-btn {
+    background-color: #585858;  
+    margin-left: 1rem;  
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.impact-container {
+    background-image: url("../images/talent-images/bgsection2.063bd869082548bafa74.png");
+    margin: 100px 0;
+    padding: 90px 1.675rem;    
+    text-align: left;
+}
+
+.impact-section{
+    display: flex;
+    flex-direction: column;    
+
+    width: 100%;
+}
+
+.impact-section h3 {
+    font-size: 1.75rem;
+    line-height: 1.875rem;
+    text-align: inherit;
+}
+
+.impact-section b {
+    margin: 1rem 0;
+}
+
+.impact-section p {
+    color: #787878;
+}
+
+.countries-container {
+    display: flex;
+    align-items: center;   
+    justify-content: space-between; 
+    margin: 1.5rem 0 5rem;
+}
+
+.countries-container img {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: .5rem;
+    height: 40px;
+    width: 50px;
+}
