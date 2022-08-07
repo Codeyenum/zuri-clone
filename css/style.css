@@ -16,7 +16,7 @@ body {
 }
 
 .banner-container {
-    background-image: url("../images/banner-bg.svg");
+    background-image: url("../images/hero-bg.svg"); 
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -57,6 +57,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    opacity: .7;
+}
+
 .btn-container {
     display: flex;
     flex-direction: column;
@@ -64,21 +68,26 @@ a {
     margin: 5.75rem 0 3.125rem;
 }
 
+.btn-container a:hover {
+    opacity: 1;
+}
+
 .banner-btn {
     border: 1px solid #E7332B;
+    cursor: pointer;
     font-size: 1rem;
     font-weight: 500;
     padding: 14px 28px;
 }
 
-.red-btn {
+.red-btn, .inverse-btn:hover {
     background-color: #E7332B;
     color: #fff;
 }
 
-.inverse-btn {
-    color: #E7332B;
+.inverse-btn, .red-btn:hover {
     background-color: #fff;
+    color: #E7332B; 
 }
 
 .programs-container {
@@ -203,8 +212,7 @@ p {
 }
 
 @media screen and (min-width: 990px){
-    .banner-container {    
-        background-image: url("../images/hero-bg.svg");     
+    .banner-container {            
         height: 800px;      
     }
     
