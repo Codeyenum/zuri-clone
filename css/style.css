@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #212529;
+
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;    
+    text-align: left;    
+}
+
+.hero-container {
+    background-image: url("../images/hero-bg.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-img {
+    margin: 7.5rem 0 5.5rem;
+}
+
+.hero {
+    color: #514949;
+    padding: .625rem;
+}
+
+.hero h2 {
+    font-size: 1.75rem;
+    font-weight: 700;  
+    line-height: 2rem;      
+    margin-bottom: 2.25rem;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;    
+    opacity: 0.8;
+}
+
+.hero a {
+    color: #E7332B;
+    text-decoration: none;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5.75rem 0 3.125rem;
+}
+
+.hero-btn {    
+    border: 1px solid #E7332B;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 14px 28px;
+}
+
+.red-btn {
+    background-color: #E7332B;
+    color: #fff;    
+}
+
+.inverse-btn {
+    color: #E7332B;
+    background-color: #fff;    
+}
+
+.programs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 16px 0;
+}
+
+.programs-container h3 {
+    color: #E7332B;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .01rem;
+}
+
+.programs-container .slogan {
+    color: #514949;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 40px;
+    margin: .5rem 0 4rem;
+}
+
+.program-card {
+    background-color: #FFFAFA;
+    margin: 1.5rem 1rem;
+    padding: 62px 47px 82px 36px;
+    text-align: left;
+}
+
+.program-card img {
+    margin-bottom: 2.6rem;
+}
+
+.program-card p {
+    color: #514949;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.program-card a {    
+    color: #E7332B;
+    font-weight: 500;
+    opacity: 0.9;
+    text-decoration: none;
+}
