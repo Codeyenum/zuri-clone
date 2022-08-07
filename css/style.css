@@ -15,8 +15,8 @@ body {
     text-align: left;
 }
 
-.hero-container {
-    background-image: url("../images/hero-bg.svg");
+.banner-container {
+    background-image: url("../images/banner-bg.svg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -31,12 +31,12 @@ body {
     margin: 7.5rem 0 5.5rem;
 }
 
-.hero {
+.banner {
     color: #514949;
     padding: .625rem;
 }
 
-.hero h2 {
+.banner h2 {
     font-size: 1.75rem;
     font-weight: 700;
     line-height: 2rem;
@@ -44,7 +44,7 @@ body {
     text-align: center;
 }
 
-.hero p {
+.banner p {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5rem;
@@ -64,7 +64,7 @@ a {
     margin: 5.75rem 0 3.125rem;
 }
 
-.hero-btn {
+.banner-btn {
     border: 1px solid #E7332B;
     font-size: 1rem;
     font-weight: 500;
@@ -160,6 +160,11 @@ footer a {
     margin: 2rem 0 0;
 }
 
+.contact-container p {
+    color: #514949;
+    font-size: 14px;
+}
+
 .contact-icons {
     margin: 0 0 4.75rem;
 }
@@ -191,4 +196,113 @@ hr~p {
 p {
     margin-top: 0;
     margin-bottom: 1rem;
+}
+
+.left-img, .right-img {
+    display: none;
+}
+
+@media screen and (min-width: 990px){
+    .banner-container {    
+        background-image: url("../images/hero-bg.svg");     
+        height: 800px;      
+    }
+    
+    .logo-img {
+        margin: 4.25rem 0 5rem;
+    }
+    
+    .banner {
+        color: #514949;
+        padding: .625rem;
+        max-width: 700px;
+    }
+    
+    .banner h2 {
+        font-size: 2rem;
+        font-weight: 600;                        
+    }
+    
+    .banner p {
+        font-size: 16px;
+        font-weight: 600;            
+    }
+
+    .btn-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .programs-container {
+        padding: 141px 16px 0;
+        position: relative;
+    }
+
+    .programs-container .slogan {            
+        margin: .5rem 0 3rem;
+    }
+
+    .programs-content {
+        display: flex;
+        padding: 0 80px;
+    }
+
+    .program-card p {
+        font-size: 14px;
+    }
+
+    .left-img, .right-img {
+        display: block;
+        position: absolute;
+        top: 250px;
+        width: 400px;
+        z-index: -1;
+    }
+
+    .left-img {
+        left: 0;
+    }
+
+    .right-img {
+        right: 0;
+    }
+
+    footer {
+        margin: 12rem 0 0;
+        text-align: center;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 112px 70px;
+        width: 100%;
+    }
+
+    .footer-logo {
+        width: 110px;
+        margin-top: 10px;
+    }
+
+    .footer-nav div {        
+        text-align: left;
+    }
+
+    .footer-nav h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: .5rem;
+    }
+    
+    .contact-container h3 {
+        margin: 0;
+    }
+    
+    hr {
+        width: 85%;
+        margin: 0 112px;
+    }
+
 }
