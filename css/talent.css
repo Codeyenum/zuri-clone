@@ -150,7 +150,7 @@ h3 {
 }
 
 .skills-container {
-    margin: 0 1.675rem;    
+    margin: 0 1.675rem 5rem;    
     text-align: left;
 }
 
@@ -185,4 +185,91 @@ h3 {
 .skill:hover {
     transform: translateY(-1rem);
     transition: .4s ease-out;
+}
+
+.hire-container {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background-color: rgb(255, 248, 229);    
+    padding: 100px 1.675rem 80px;   
+    position: relative; 
+}
+
+.rope-img {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    /* width: 100%;     */
+}
+
+.reasons-to-hire {
+    margin: 5rem 0 0;
+}
+
+.hire-reason {
+    background-color: #fff;
+    border-radius: 0 0 16px 0;
+    padding: 45px 10px;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.hire-reason:hover {
+    background-color: #161617;
+    box-shadow: 0 8px 30px hsl(0deg 0% 69% / 7%);
+    color: #fff;
+}
+
+.hire-reason p {
+    color: #787878;
+    margin: 1.5rem 1px;
+    padding: 15px 0 0;
+}
+
+.hire-container .btn-container {
+    margin: 4.5rem 0 0;
+}
+
+footer {
+    background-color: #161617;
+    padding: 80px 0 0;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.socials-container {
+    margin: 1rem 0 0;
+}
+
+.socials-container img {
+    height: 30px; 
+    width: 30px; 
+    margin: .5rem;  
+}
+
+.email-link {
+    margin: 1rem 0;
+}
+
+.email-link a {
+    color: #fff;
+    font-weight: 500;    
+}
+
+footer hr {
+    border-color: gray;
+    border-width: 0 0 thin;
+    width: 90%;
+}
+
+.copyright {    
+    color: #fff;
+    margin: 1rem  0;
+    padding: 0 16px;
 }
