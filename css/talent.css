@@ -53,12 +53,13 @@ header a>p {
     margin: 0 1.675rem;
     padding: 130px 0 0;
     text-align: center;
+    position: relative;
 }
 
 .banner {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
 }
 
 .banner h2 {
@@ -105,6 +106,10 @@ header a>p {
 
 .banner-img {
     width: 100%;
+}
+
+.end-swirl {
+    display: none;
 }
 
 .impact-container {
@@ -292,6 +297,21 @@ footer hr {
         padding: 11.5px 24px 26.5px;
     }
 
+    header a>p {
+        border-bottom: 3px solid transparent;
+        color: #161617;
+        opacity: .9;
+        display: inline-block;
+        margin: 0 1.75rem;
+        padding: 9.5px 0;
+    }
+
+    header a>p:hover, header a>p:active {    
+        opacity: 1;   
+        background-color: rgba(25, 118, 210, 0.04); 
+        border-bottom: 3px solid #e7332b;
+    }
+
     .banner-container {
         padding: 220px 0 0;
     }
@@ -435,6 +455,15 @@ footer hr {
         width: 100%;
     }
 
+    .end-swirl {
+        display: block;
+        position: absolute;
+        width: 11.25%;
+        bottom: 17.5%;
+        right: -6.65625rem;
+        z-index: -1;
+    }
+
     .btn-container {
         justify-content: flex-start;
     }
@@ -479,6 +508,12 @@ footer hr {
 
     .skills-container {
         margin: 0 6.65625rem;
+        position: relative;
+    }
+
+    .skills-container .end-swirl {
+        width: 41.5%;
+        bottom: 47.5%;
     }
 
     .skills-container h3 {
@@ -487,6 +522,16 @@ footer hr {
 
     .skill {        
         width: unset;
+        padding: 1rem 1rem;
+        max-width: 220px;
+    }
+
+    .talents .skill {
+        padding: .65rem;
+    }
+
+    .skill p {
+        font-size: 1.25rem;
     }
 
     .reasons-container {
