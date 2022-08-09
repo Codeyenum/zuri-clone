@@ -540,7 +540,12 @@ footer hr {
     }
 
     .hire-reason {
-        max-width: 400px;
+        max-width: 390px;
+        padding: 45px 10px 35px;
+    }
+
+    .hire-reason p {                
+        margin: 0rem 1px;        
     }
 
     .rope-img {
