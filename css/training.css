@@ -18,6 +18,7 @@ header {
     padding: 21px 16px;
     position: fixed;
     top: 0;
+    width: 100%;
     z-index: 3;
 }
 
@@ -194,7 +195,13 @@ b {
     background-color: #fff;
     border-radius: 18px;
     box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+    transition: .3s ease-out;
     padding: 58px 48px 63px 40px;
+}
+
+.reason:hover {
+    transition: .3s ease-out;
+    transform: translateY(-1rem);
 }
 
 .reason strong {
@@ -226,4 +233,84 @@ b {
     top: 0;
     right: 0;
     width: 30%;
+}
+
+.training-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #e7332b;
+    color: #fff;
+    padding: 6rem 1rem 0;
+    position: relative;
+}
+
+.curly-arrow--2 {
+    position: absolute;
+    width: 15%;
+    left: 50%;
+    top: 3.5rem;
+    transform: translateX(-50%);
+}
+
+.training-container h2, .training-container b {
+    color: #fff;
+    line-height: 125%;
+    padding-right: 8px;
+}
+
+.training-container p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 3rem 0 1.5rem;
+    padding-right: 16px;
+}
+
+.training-container button {
+    background-color: #fff;
+    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+    color: #e7332b;
+    letter-spacing: .075rem;    
+    width: 45%;
+}
+
+.attractions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 1.5rem;   
+    margin: 2.5rem 0;
+}
+
+.attraction {
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    gap: 6%;    
+    padding: 11px 8px 11px 15px;   
+    width: 45%; 
+    height: 100%;
+}
+
+.attraction img {
+    width: 15%;
+    min-width: 30px;
+}
+
+.attraction p {
+    font-size: .8125rem;
+    margin: 0;
+    padding: 0;
+}
+
+.girl-writing {
+    width: 100%;
+}
+
+.dotsquare-img {
+    width: 20%;
+    padding: 35px 16px;
+    align-self: start;
 }
