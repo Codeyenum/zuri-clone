@@ -16,6 +16,9 @@ header {
     justify-content: space-between;
     background-color: #fffdf5;
     padding: 21px 16px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
 }
 
 a {
@@ -70,7 +73,7 @@ header nav {
     
     border-bottom: 1px solid rgba(128, 128, 128, 0.3);    
     margin: 1rem;
-    padding-bottom: 32px;
+    padding: 80px 0 32px;
     text-align: center;
 }
 
@@ -120,4 +123,107 @@ b {
 .banner .spiral {
     margin: 0 0 0 50%;
     width: 15%;
+}
+
+.sufficiency-container {  
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);      
+    margin: 1rem;
+    text-align: center;
+}
+
+.sufficiency-container b {
+    font-size: 1.25rem;
+}
+
+.sufficiency-container img {
+    margin: 1rem 0 2rem;
+    width: 50%;    
+}
+
+.sufficiency-container p {
+    font-size: 1.175rem;    
+    letter-spacing: 0.016884px;
+    line-height: 125%;
+    opacity: .9;
+    padding: 0px 0 40px;
+}
+
+.sufficiency-container a {
+    color: #43b97f;
+    text-decoration: underline;
+}
+
+.about-container {
+    background: linear-gradient(180deg,rgba(255,244,240,0),#fff4f0 17.19%,#fff4f0 84.37%,rgba(255,244,240,0));
+    padding: 1.5rem 1rem; 
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.curly-arrow {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15vw;
+}
+
+.why-section {
+    margin-top: 2.5rem;
+}
+
+.why-section b {
+    font-size: 1.5rem;
+    line-height: 130%;    
+    padding-right: 1rem;
+}
+
+.reason-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 3.375rem 0;
+}
+
+.reason {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+    padding: 58px 48px 63px 40px;
+}
+
+.reason strong {
+    font-size: 2.75rem;
+    font-weight: 800;
+}
+
+.reason h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 120%;
+    padding: 0 35% 0 0;
+}
+
+.reason p {
+    font-size: 1.2rem;
+    line-height: 120%;
+    margin-top: 1.25rem;
+    opacity: .9;
+}
+
+.box1 {
+    background-color: #e7332b;
+    color: #fff;
+}
+
+.curve {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
 }
