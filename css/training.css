@@ -23,7 +23,7 @@ header {
 }
 
 a {
-    text-decoration: none;    
+    text-decoration: none;
 }
 
 header a>p {
@@ -40,11 +40,11 @@ header a>p {
     position: relative;
 }
 
-.enroll-container > button {
+.enroll-container>button {
     background-color: #e7332b;
     border: none;
     border-radius: 4.5rem;
-    color: #fff;    
+    color: #fff;
     font-size: 1.125rem;
     min-width: 64px;
     width: 100%;
@@ -69,10 +69,10 @@ header nav {
 
 .banner {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     align-items: center;
-    
-    border-bottom: 1px solid rgba(128, 128, 128, 0.3);    
+
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
     margin: 1rem;
     padding: 80px 0 32px;
     text-align: center;
@@ -93,12 +93,16 @@ h2 {
 }
 
 b {
-    color: #1b1a20; 
-    display: block;  
-    font-size: 1.85rem;             
+    color: #1b1a20;
+    display: block;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 110%;
-    padding-top: 10px;    
+    padding-top: 10px;
+}
+
+.banner b {
+    font-size: 1.85rem;
 }
 
 .banner p {
@@ -111,13 +115,13 @@ b {
     display: block;
 }
 
-.banner .enroll-container > button {
-    width: unset;    
+.banner .enroll-container>button {
+    width: unset;
 }
 
 .banner .curved-line {
     display: flex;
-    margin: .25rem -1.25rem 1.75rem 60%; 
+    margin: .25rem -1.25rem 1.75rem 60%;
     width: 33%;
 }
 
@@ -126,8 +130,8 @@ b {
     width: 15%;
 }
 
-.sufficiency-container {  
-    border-bottom: 1px solid rgba(128, 128, 128, 0.3);      
+.sufficiency-container {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
     margin: 1rem;
     text-align: center;
 }
@@ -138,11 +142,11 @@ b {
 
 .sufficiency-container img {
     margin: 1rem 0 2rem;
-    width: 50%;    
+    width: 50%;
 }
 
 .sufficiency-container p {
-    font-size: 1.175rem;    
+    font-size: 1.175rem;
     letter-spacing: 0.016884px;
     line-height: 125%;
     opacity: .9;
@@ -155,8 +159,8 @@ b {
 }
 
 .about-container {
-    background: linear-gradient(180deg,rgba(255,244,240,0),#fff4f0 17.19%,#fff4f0 84.37%,rgba(255,244,240,0));
-    padding: 1.5rem 1rem; 
+    background: linear-gradient(180deg, rgba(255, 244, 240, 0), #fff4f0 17.19%, #fff4f0 84.37%, rgba(255, 244, 240, 0));
+    padding: 1.5rem 1rem;
     margin-bottom: 5rem;
     position: relative;
 }
@@ -175,7 +179,7 @@ b {
 
 .why-section b {
     font-size: 1.5rem;
-    line-height: 130%;    
+    line-height: 130%;
     padding-right: 1rem;
 }
 
@@ -191,7 +195,7 @@ b {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    
+
     background-color: #fff;
     border-radius: 18px;
     box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
@@ -254,10 +258,15 @@ b {
     transform: translateX(-50%);
 }
 
-.training-container h2, .training-container b {
+.training-container h2,
+.training-container b {
     color: #fff;
     line-height: 125%;
     padding-right: 8px;
+}
+
+.training-container b {
+    font-size: 1.85rem;
 }
 
 .training-container p {
@@ -271,15 +280,15 @@ b {
     background-color: #fff;
     box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
     color: #e7332b;
-    letter-spacing: .075rem;    
+    letter-spacing: .075rem;
     width: 45%;
 }
 
 .attractions-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
-    gap: 1.5rem;   
+    justify-content: space-between;
+    gap: 1.5rem;
     margin: 2.5rem 0;
 }
 
@@ -288,9 +297,9 @@ b {
     align-items: center;
     border: 2px solid #fff;
     border-radius: 30px;
-    gap: 6%;    
-    padding: 11px 8px 11px 15px;   
-    width: 45%; 
+    gap: 6%;
+    padding: 11px 8px 11px 15px;
+    width: 45%;
     height: 100%;
 }
 
@@ -314,3 +323,107 @@ b {
     padding: 35px 16px;
     align-self: start;
 }
+
+.scope-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    padding: 4.5rem 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.scope-swirl {
+    width: 40%;
+    align-self: center;
+    margin: 1rem 0;
+}
+
+.track {
+    background-color: #fff;
+    border-radius: 41px;
+    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+    margin: 1.5rem 0;
+    padding: 40px;
+}
+
+.track-images-container {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 1.25rem;
+    width: 100%;
+}
+
+.track-images-container img {
+    height: 45px;
+    max-width: 90px;
+    margin-right: 1rem;
+}
+
+.lg-img-container img {
+    max-height: 35px;
+    margin-right: .5rem;
+    width: 80px;
+}
+
+.track p {
+    margin: 2.5rem 0;
+}
+
+.scope-container button {
+    width: 50%;
+    margin: 2rem auto 0;
+}
+
+.faq-container {
+    position: relative;
+    margin: 0 1rem;
+    padding: 17.5% 0 0;
+}
+
+.faq-section {
+    margin: 0 0 5rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.faq-swirl {
+    position: absolute;
+    top: 2rem;
+    left: 7.5%;
+    width: 23%;
+}
+
+.accordion {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 1px solid rgba(71, 44, 111, .43);
+    border-bottom: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 130%;    
+    padding: 20px;
+    transition: 0.4s;
+}
+
+.accordion .fa-plus {
+    font-size: 1.25rem;
+    transition: 0.4s;
+    margin-left: 1rem;         
+}
+
+.accordion .fa-plus.active {
+    transform: rotate(270deg);    
+}
+
+.panel {
+    padding: 0 20px;    
+    background-color: white;
+    border: 1px solid rgba(71, 44, 111, .43);
+    border-top: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
