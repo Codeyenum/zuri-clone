@@ -420,10 +420,11 @@ b {
 }
 
 .panel {
-    padding: 0 20px;
-    background-color: white;
+    padding: 0 20px;    
     border: 1px solid rgba(71, 44, 111, .43);
     border-top: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -484,7 +485,7 @@ b {
 .path-container {
     display: flex;
     flex-direction: column;
-
+    position: relative;
 }
 
 .path {
@@ -496,6 +497,7 @@ b {
     padding: 64px 48px;
     position: relative;
     text-align: left;
+    z-index: 2;
 }
 
 .path ul {
@@ -526,9 +528,22 @@ b {
     margin: 1rem 0;
 }
 
+.path li > p {
+    margin: 0;
+    padding: 0 0 0 1.45rem;
+}
+
 .path .bottom {
     position: absolute;
     right: 2rem;
     bottom: 2rem;
     width: 25%;
+}
+
+.bottom-circle {
+    position: absolute;
+    bottom: -1.25rem;
+    right: -14px;
+    width: 40%;
+    z-index: 1;    
 }
