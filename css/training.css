@@ -547,3 +547,93 @@ b {
     width: 40%;
     z-index: 1;    
 }
+
+.begin-container {   
+    background-color: #e7332b; 
+    border-radius: 21px;
+    color: #fff;
+    margin: 4rem 1rem;
+    padding: 4.375rem;
+    position: relative;
+    text-align: center;
+}
+
+.begin-container h2, .begin-container b {
+    color: #fff;    
+    line-height: 130%;
+}
+
+.begin-container b {
+    font-size: 1.625rem;
+}
+
+.begin-container .enroll-container button {
+    color: #e7332b;
+    background-color: #fff;
+    font-size: 1.075rem;    
+    letter-spacing: .125rem;
+    margin: 2.5rem auto 1.5rem; 
+    padding: 10px 32px;
+    width: 100%;
+}
+
+.top-right {
+    top: 0;
+    right: 0;    
+    position: absolute;
+    width: 22%;
+}
+
+.up-left {
+    position: absolute;
+    top: 7.5%;
+    left: 10%;
+    width: 22%;
+}
+.bottom-right {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 22%;
+}
+.bottom-left {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 22%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.footer-logo {
+    width: 300px;
+}
+
+footer a {
+    color: #1b1a20;
+}
+
+footer nav {
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.text-links-container {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    padding: .5rem 0;
+    width: 100%;
+}
+
+.text-links-container p {
+    margin: 1.5rem;
+}
+
+.copyright {
+    margin: 1rem 0;
+}
