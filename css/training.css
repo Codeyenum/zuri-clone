@@ -375,9 +375,10 @@ b {
 }
 
 .faq-container {
-    position: relative;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
     margin: 0 1rem;
-    padding: 17.5% 0 0;
+    padding: 17.5% 0 40px;
+    position: relative;
 }
 
 .faq-section {
@@ -403,7 +404,7 @@ b {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 500;
-    line-height: 130%;    
+    line-height: 130%;
     padding: 20px;
     transition: 0.4s;
 }
@@ -411,19 +412,123 @@ b {
 .accordion .fa-plus {
     font-size: 1.25rem;
     transition: 0.4s;
-    margin-left: 1rem;         
+    margin-left: 1rem;
 }
 
 .accordion .fa-plus.active {
-    transform: rotate(270deg);    
+    transform: rotate(270deg);
 }
 
 .panel {
-    padding: 0 20px;    
+    padding: 0 20px;
     background-color: white;
     border: 1px solid rgba(71, 44, 111, .43);
     border-top: none;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-  }
+}
+
+.tweet-section {
+    margin: 4.375rem 0 0;
+}
+
+.tweet-section h4 {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 0 1rem;
+    text-align: center;
+}
+
+.tweet-section .enroll-container button {
+    font-size: 1rem;
+    margin: auto;
+    width: unset;
+}
+
+.structure-container { 
+    background-color: #fffdf5;   
+    padding: 30px 16px;
+    position: relative;
+    text-align: center;
+}
+
+.top {
+    position: absolute;
+    top: 2rem;
+}
+
+.structure-swirl {
+    left: 15%;
+    width: 23%;
+}
+
+.structure-star {
+    right: 0;
+    width: 13%;
+}
+
+.structure {
+    margin: 2rem 0 0;
+}
+
+.structure b {
+    padding: 0;
+}
+
+.structure p {
+    margin: 1.25rem 0;
+}
+
+.path-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.path {
+    background-color: #1b1a20;
+    border-radius: 65px;
+    box-shadow: 0 31px 60px rgba(231, 51, 43, 0.2);
+    color: #fff;
+    margin: 1.25rem 0;
+    padding: 64px 48px;
+    position: relative;
+    text-align: left;
+}
+
+.path ul {
+    list-style-position: inside;
+    margin-bottom: 1rem;
+}
+
+.training-list {
+    list-style: none;
+}
+
+.training-list li::before {
+    content: "\2022";
+    /* \2022 is the CSS Code/unicode for a bullet */
+    color: transparent;        
+    display: inline-block;    
+    width: 8px;    
+    margin: 0 1rem 0 -1px;    
+}
+
+.path h2 {
+    color: #fff;
+    font-size: 2.125rem;
+    font-weight: 700;
+}
+
+.path p {
+    margin: 1rem 0;
+}
+
+.path .bottom {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    width: 25%;
+}
