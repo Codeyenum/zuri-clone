@@ -45,6 +45,7 @@ header a>p {
     border: none;
     border-radius: 4.5rem;
     color: #fff;
+    cursor: pointer;
     font-size: 1.125rem;
     min-width: 64px;
     width: 100%;
@@ -75,6 +76,7 @@ header nav {
     border-bottom: 1px solid rgba(128, 128, 128, 0.3);
     margin: 1rem;
     padding: 80px 0 32px;
+    position: relative;
     text-align: center;
 }
 
@@ -276,6 +278,11 @@ b {
     padding-right: 16px;
 }
 
+.training-container .enroll-container,
+.begin-container .enroll-container {
+    max-width: 9rem;
+}
+
 .training-container button {
     background-color: #fff;
     box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
@@ -369,9 +376,16 @@ b {
     margin: 2.5rem 0;
 }
 
-.scope-container button {
-    width: 50%;
+.scope-container .enroll-container,
+.begin-container .enroll-container {
+    width: unset;
     margin: 2rem auto 0;
+}
+
+.scope-container button,
+.training-container button,
+.begin-container button {
+    width: unset;
 }
 
 .faq-container {
@@ -420,7 +434,7 @@ b {
 }
 
 .panel {
-    padding: 0 20px;    
+    padding: 0 20px;
     border: 1px solid rgba(71, 44, 111, .43);
     border-top: none;
     font-family: 'Times New Roman', Times, serif;
@@ -448,8 +462,8 @@ b {
     width: unset;
 }
 
-.structure-container { 
-    background-color: #fffdf5;   
+.structure-container {
+    background-color: #fffdf5;
     padding: 30px 16px;
     position: relative;
     text-align: center;
@@ -512,10 +526,10 @@ b {
 .training-list li::before {
     content: "\2022";
     /* \2022 is the CSS Code/unicode for a bullet */
-    color: transparent;        
-    display: inline-block;    
-    width: 8px;    
-    margin: 0 1rem 0 -1px;    
+    color: transparent;
+    display: inline-block;
+    width: 8px;
+    margin: 0 1rem 0 -1px;
 }
 
 .path h2 {
@@ -528,7 +542,7 @@ b {
     margin: 1rem 0;
 }
 
-.path li > p {
+.path li>p {
     margin: 0;
     padding: 0 0 0 1.45rem;
 }
@@ -545,11 +559,11 @@ b {
     bottom: -1.25rem;
     right: -14px;
     width: 40%;
-    z-index: 1;    
+    z-index: 1;
 }
 
-.begin-container {   
-    background-color: #e7332b; 
+.begin-container {
+    background-color: #e7332b;
     border-radius: 21px;
     color: #fff;
     margin: 4rem 1rem;
@@ -558,8 +572,9 @@ b {
     text-align: center;
 }
 
-.begin-container h2, .begin-container b {
-    color: #fff;    
+.begin-container h2,
+.begin-container b {
+    color: #fff;
     line-height: 130%;
 }
 
@@ -570,16 +585,14 @@ b {
 .begin-container .enroll-container button {
     color: #e7332b;
     background-color: #fff;
-    font-size: 1.075rem;    
-    letter-spacing: .125rem;
-    margin: 2.5rem auto 1.5rem; 
-    padding: 10px 32px;
-    width: 100%;
+    font-size: 1.075rem;
+    letter-spacing: .125rem;    
+    padding: 10px 20px;    
 }
 
 .top-right {
     top: 0;
-    right: 0;    
+    right: 0;
     position: absolute;
     width: 22%;
 }
@@ -590,12 +603,14 @@ b {
     left: 10%;
     width: 22%;
 }
+
 .bottom-right {
     bottom: 0;
     right: 0;
     position: absolute;
     width: 22%;
 }
+
 .bottom-left {
     bottom: 0;
     left: 0;
@@ -635,5 +650,165 @@ footer nav {
 }
 
 .copyright {
-    margin: 1rem 0;
+    margin: 0 0 1rem;
+}
+
+.male-face {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+
+    header {
+        padding: 27px 38px;
+    }
+
+    .banner,
+    .sufficiency-container,
+    .scope-container,
+    .faq-container,
+    .begin-container {
+        margin: 1rem 2.375rem;
+    }
+
+    .banner b {
+        font-size: 2.375rem;
+    }
+
+    .banner p {
+        font-size: 1.125rem;
+        margin: 0 7rem;
+    }
+
+    .header-logo {
+        width: 300px;
+    }
+
+    .thumb-img {
+        width: 55%;
+        margin: 0 0 0 -3rem;
+    }
+
+    .banner .girl-img {
+        width: 76%;
+    }
+
+    .banner .male-face {
+        display: block;
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        width: 54px;
+    }
+
+    .about-container {
+        padding: 1rem 2.375rem;
+    }
+
+    .reason-container {
+        padding: 1rem;
+    }
+
+    .reason {
+        padding: 58px 48px 93px 50px
+    }
+
+    .reason strong {
+        font-size: 3.75rem;
+    }
+
+    .reason h3 {
+        font-size: 2.125rem;
+        padding: 0 60% 0 0;
+    }
+
+    .training-container,
+    .structure-container {
+        padding: 96px 38px;
+    }
+
+    .training-container b {
+        font-size: 1.875rem;
+    }
+
+    .attraction {
+        border-radius: 79px;
+    }
+
+    .scope-container b {
+        padding: 0 30% 0 0;
+    }
+
+    .scope-swirl {
+        width: 13%;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    .tweet-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tweet-section h4 {
+        font-size: 1.125rem;
+        margin: 0 2rem;
+    }
+
+    .structure-star {
+        right: 3rem;
+        width: 12%;
+    }
+
+    .bottom-circle {
+        max-width: 100px;
+        bottom: 0;
+    }
+
+    .begin-container b {
+        font-size: 2.875rem;
+        padding: 0 17.5%;
+    }
+
+    footer {
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 90px 38px 20px;
+        gap: 2rem;
+        position: relative;
+    }
+
+    footer nav {
+        display: flex;  
+        flex-direction: column;        
+        align-items: flex-end;
+        gap: 2.5rem;
+
+        position: absolute;           
+        bottom: 0;  
+        right: 0;         
+        margin: 1rem 2.375rem 36px;  
+        width: unset;         
+    }
+
+    .socials a {
+        margin-left: .5rem;
+    }
+
+    .text-links-container {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1.5rem;
+        
+        border-bottom: none;        
+        padding: 0;        
+        width: unset;
+    }
+    
+    .text-links-container p {
+        margin: 0;        
+    }
 }
