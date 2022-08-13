@@ -437,6 +437,7 @@ b {
     padding: 0 20px;
     border: 1px solid rgba(71, 44, 111, .43);
     border-top: none;
+    color: #000;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
     max-height: 0;
@@ -586,8 +587,8 @@ b {
     color: #e7332b;
     background-color: #fff;
     font-size: 1.075rem;
-    letter-spacing: .125rem;    
-    padding: 10px 20px;    
+    letter-spacing: .125rem;
+    padding: 10px 20px;
 }
 
 .top-right {
@@ -653,7 +654,8 @@ footer nav {
     margin: 0 0 1rem;
 }
 
-.male-face {
+.male-face,
+.about-star {
     display: none;
 }
 
@@ -782,16 +784,16 @@ footer nav {
     }
 
     footer nav {
-        display: flex;  
-        flex-direction: column;        
+        display: flex;
+        flex-direction: column;
         align-items: flex-end;
         gap: 2.5rem;
 
-        position: absolute;           
-        bottom: 0;  
-        right: 0;         
-        margin: 1rem 2.375rem 36px;  
-        width: unset;         
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 1rem 2.375rem 36px;
+        width: unset;
     }
 
     .socials a {
@@ -802,13 +804,141 @@ footer nav {
         display: flex;
         flex-direction: row-reverse;
         gap: 1.5rem;
-        
-        border-bottom: none;        
-        padding: 0;        
+
+        border-bottom: none;
+        padding: 0;
         width: unset;
     }
-    
+
     .text-links-container p {
-        margin: 0;        
+        margin: 0;
+    }
+
+}
+
+@media screen and (min-width:900px) {
+    .sufficiency-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    b {
+        font-size: 1.875rem;
+    }
+
+    .sufficiency-container img {
+        margin: -1rem 10% 5rem;
+        width: 9.5%;
+    }
+
+    .sufficiency-container b {
+        width: 30%;
+        font-size: 1.5rem;
+    }
+
+    .sufficiency-container p {
+        text-align: right;
+        width: 30%;
+    }
+
+    .about-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .curly-arrow {
+        left: 30%;
+        width: 8%;
+    }
+
+    .why-section {
+        width: 60%;
+    }
+
+    .why-section b {
+        font-size: 2rem;
+    }
+
+    .about-star {
+        display: block;
+        width: 20%;
+        margin: 4rem 2rem 0;
+        filter: saturate(3);
+    }
+
+    .reason-container {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;        
+        justify-content: center;
+        padding: 1.5rem;
+    }
+
+    .reason {
+        width: 47.5%;        
+    }
+
+    .training-container {
+        padding: 96px 70px;         
+    }
+
+    .attractions-container {
+        flex-wrap: unset;
+    }
+
+    .attraction {
+        width: 24%;
+    }
+
+    .scope-container b {
+        padding: 0;
+    }
+
+    .track-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+    }
+
+    .track {
+        width: 47.5%;
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .scope-container .enroll-container {
+        margin: 5rem auto 2rem;
+    }
+
+    .accordion-container {
+        padding: 0 4rem;
+    }
+
+    .accordion {
+        font-size: 1.125rem;        
+    }
+
+    .accordion p {
+        font-weight: 600;
+    }
+
+    .structure p {
+        font-size: 1.125rem;
+    }
+
+    .path-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .path {
+        width: 47.5%;
     }
 }
