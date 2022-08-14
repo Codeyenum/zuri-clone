@@ -655,7 +655,8 @@ footer nav {
 }
 
 .male-face,
-.about-star {
+.about-star,
+.boy-img {
     display: none;
 }
 
@@ -940,5 +941,127 @@ footer nav {
 
     .path {
         width: 47.5%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .banner,
+    .sufficiency-container,
+    .scope-container,
+    .faq-container,
+    .begin-container {
+        margin: 1rem 4.875rem;
+    }
+
+    .training-container,
+    .structure-container {
+        padding: 96px 78px;
+    }
+
+    footer {
+        padding: 90px 78px 20px;        
+    }
+
+    footer nav {        
+        margin: 1rem 4.875rem 36px;    
+    }
+    
+    .banner {
+        flex-direction: row; 
+        margin-bottom: 0;        
+    }
+
+    .banner .girl-img {        
+        width: 30%;
+    }
+
+    .banner .boy-img {
+        display: block;
+        width: 25%;
+    }
+
+    .banner b {
+        font-size: 3.125rem;
+    }
+
+    .banner .male-face {
+        left: 35%;
+    }
+
+    .sufficiency-container img {        
+        width: 15%;
+    }
+
+    .sufficiency-container b {
+        line-height: 130%;
+        text-align: left;
+    }
+
+    .sufficiency-container p {
+        font-size: 1.5rem;
+    }
+
+    .reason {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30%;
+    }
+
+    .reason h3 {
+        font-size: 2.125rem;
+        padding: 0 25% 0 0;
+    }
+
+    .training-container {        
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .training-container b {
+        font-size: 2.5rem;
+    }
+
+    .training-container p {        
+        margin: 3rem 0 1.5rem;
+        width: 75%;
+    }
+    
+    .attractions-container {        
+        flex-wrap: wrap;
+        justify-content: unset;
+        gap: 1.5rem;        
+    }
+
+    .attraction {
+        width: 45%;
+    }
+
+    .attraction img {
+        width: 20%;
+    }
+
+    .attractions-container .attraction p {
+        font-size: 1.125rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .girl-writing {
+        width: 60%;
+    }
+
+    .dotsquare-img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 12.5%;
+    }
+
+    .curly-arrow--2 {        
+        width: 5%;
+        left: 30%;        
     }
 }
